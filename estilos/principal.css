@@ -94,9 +94,16 @@
     .scene__layer { position: relative; z-index: 3; width: 100%; max-width: var(--max); padding: 0 var(--pad); height: 100%; display: flex; flex-direction: column; justify-content: center; pointer-events: none; }
     .scene__layer::before {
       content: '';
-      position: absolute; inset: 0;
-      background: radial-gradient(ellipse 85% 75% at 22% 50%, rgba(10,9,8,.82) 0%, rgba(10,9,8,.52) 38%, transparent 72%), linear-gradient(90deg, rgba(10,9,8,.55) 0%, rgba(10,9,8,.18) 45%, transparent 65%);
-      z-index: -1; pointer-events: none;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      width: 100vw; /* Ocupa a tela toda */
+      transform: translateX(-50%);
+      background: radial-gradient(ellipse 85% 75% at 22% 50%, rgba(10,9,8,.82) 0%, rgba(10,9,8,.52) 38%, transparent 72%), 
+                  linear-gradient(90deg, rgba(10,9,8,.85) 0%, rgba(10,9,8,.18) 45%, transparent 65%); /* Aumentei um pouco o escuro na esquerda */
+      z-index: -1; 
+      pointer-events: none;
     }
 
     .scene__eyebrow {
