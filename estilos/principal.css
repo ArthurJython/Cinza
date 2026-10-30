@@ -382,7 +382,7 @@
       .site-header.is-scrolled { padding-top: 13px; padding-bottom: 13px; }
       .logo { gap: 8px; font-size: 19px; letter-spacing: .12em; }
       .header-cta { padding: 10px 13px; font-size: 9px; letter-spacing: .1em; }
-      .scene { height: 240svh; }
+      .scene { height: 300svh; }
       .scene__sticky { min-height: 520px; }
       #sceneVideo { display: none !important; }
       .scene__frames { display: block; position: absolute; inset: 0; }
