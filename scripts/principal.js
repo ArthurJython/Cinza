@@ -402,7 +402,7 @@
       }
 
       async function boot() {
-        scene.style.height = isMobile ? '240svh' : '280svh';
+        scene.style.height = isMobile ? '300svh' : '280svh';
         measureLayout();
         updateScene(true);
 
