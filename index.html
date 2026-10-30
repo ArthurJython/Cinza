@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0A0908">
+  <meta name="description" content="CINZA é um atelier de moda em São Paulo. Peças numeradas à mão, produção própria e drops limitados.">
+  <meta name="keywords" content="moda autoral, atelier de moda, slow fashion, alfaiataria, peças numeradas, moda brasileira, drop limitado">
+  <meta property="og:title" content="CINZA — O que sobra depois do excesso">
+  <meta property="og:description" content="Atelier de moda em São Paulo. Peças numeradas, produção própria e drops limitados.">
+  <meta property="og:type" content="website">
+  <title>CINZA — Atelier de moda | Peças numeradas, drops limitados</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="estilos/principal.css">
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="site-header" id="header">
+    <a href="#top" class="logo" aria-label="CINZA — página inicial"><span class="logo__mark" aria-hidden="true"></span>Cinza</a>
+    <nav class="nav" aria-label="Navegação principal">
+      <a href="#manifesto">Manifesto</a><a href="#pecas">Peças</a><a href="#materia">Matéria</a><a href="#atelier">Atelier</a><a href="#perguntas">Perguntas</a>
+    </nav>
+    <a href="#reserva" class="header-cta">Reservar peça</a>
+  </header>
+
+  <main id="top">
+    <section class="scene" id="scene" aria-label="Cena de abertura">
+      <div class="scene__sticky">
+        <video id="sceneVideo" muted playsinline preload="none" aria-hidden="true"></video>
+
+        <div class="scene__frames" id="sceneFrames" aria-hidden="true">
+          <div class="scene__frame is-active" data-frame="0"><img src="video/quadros/quadro-01.jpg" alt="" loading="eager" fetchpriority="high"></div>
+          <div class="scene__frame" data-frame="1"><img src="video/quadros/quadro-02.jpg" alt="" loading="eager"></div>
+          <div class="scene__frame" data-frame="2"><img src="video/quadros/quadro-03.jpg" alt="" loading="eager"></div>
+        </div>
+
+        <div class="scene__vignette" aria-hidden="true"></div>
+        <div class="scene__eyebrow">Atelier de moda · São Paulo</div>
+        <div class="scene__layer">
+          <div class="phases">
+            <div class="phase is-active" data-from="0" data-to="0.31">
+              <span class="phase__tag">Cena 01 — A forma</span>
+              <h1>Antes do corte,<br><em>o corpo.</em></h1>
+              <p>Nenhuma peça nasce de uma prancha de tendências. Tudo começa num corpo de costas, numa fita métrica e numa pergunta: o que sobra quando você tira tudo?</p>
+            </div>
+            <div class="phase" data-from="0.31" data-to="0.64">
+              <span class="phase__tag">Cena 02 — O tempo</span>
+              <h2>Trinta metros<br>de linho.<br><em>Setecentos</em><br>pontos à mão.</h2>
+              <p>Cada peça leva trinta e duas horas de costura, sete provas de ajuste e um mês de espera. Não existe coleção rápida.</p>
+            </div>
+            <div class="phase" data-from="0.64" data-to="1.01">
+              <span class="phase__tag">Cena 03 — O que resta</span>
+              <h2>Cinza é<br>o que sobra<br><em>depois</em><br>do excesso.</h2>
+              <p>Duas coleções por ano. Cento e oitenta peças numeradas. Quando esgota, o molde é arquivado e não volta.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="scene__proof" aria-label="Indicadores da marca">
+          <div><div class="proof__num">4,9<span style="font-size:.45em;color:var(--ember-bright)">/5</span></div><div class="proof__label">312 avaliações<br>verificadas</div></div>
+          <div class="proof__divider" aria-hidden="true"></div>
+          <div><div class="proof__num">180</div><div class="proof__label">peças<br>por coleção</div></div>
+        </div>
+        <div class="scene__hud"><div class="scroll-hint" id="scrollHint"><span class="scroll-hint__line" aria-hidden="true"></span><span>Role para revelar</span></div></div>
+        <div class="loader" id="loader"><div class="loader__inner"><span class="loader__label" id="loaderLabel">Preparando a cena</span><span class="loader__count" id="loaderCount">0%</span><div class="loader__bar"><i id="loaderBar"></i></div></div></div>
+      </div>
+    </section>
+
+    <section class="press" aria-label="Reconhecimento na imprensa">
+      <div class="press__eyebrow">Na imprensa</div>
+      <div class="press__viewport" aria-hidden="true"><div class="press__track">
+        <span class="press__item">Vogue Brasil</span><span class="press__divider">·</span><span class="press__item">Harper's Bazaar</span><span class="press__divider">·</span><span class="press__item">Elle</span><span class="press__divider">·</span><span class="press__item">FFW</span><span class="press__divider">·</span><span class="press__item">Marie Claire</span><span class="press__divider">·</span><span class="press__item">L'Officiel</span><span class="press__divider">·</span><span class="press__item">Casa Vogue</span><span class="press__divider">·</span><span class="press__item">Glamour</span><span class="press__divider">·</span>
+        <span class="press__item press__item--dup">Vogue Brasil</span><span class="press__divider press__item--dup">·</span><span class="press__item press__item--dup">Harper's Bazaar</span><span class="press__divider press__item--dup">·</span><span class="press__item press__item--dup">Elle</span><span class="press__divider press__item--dup">·</span><span class="press__item press__item--dup">FFW</span><span class="press__divider press__item--dup">·</span><span class="press__item press__item--dup">Marie Claire</span><span class="press__divider press__item--dup">·</span><span class="press__item press__item--dup">L'Officiel</span><span class="press__divider press__item--dup">·</span><span class="press__item press__item--dup">Casa Vogue</span><span class="press__divider press__item--dup">·</span><span class="press__item press__item--dup">Glamour</span><span class="press__divider press__item--dup">·</span>
+      </div></div>
+      <p class="sr-only">Como visto em: Vogue Brasil, Harper's Bazaar, Elle, FFW, Marie Claire, L'Officiel, Casa Vogue e Glamour.</p>
+    </section>
+
+    <section class="section manifesto" id="manifesto"><div class="wrap">
+      <div class="manifesto__grid">
+        <div class="reveal"><div class="eyebrow">O manifesto</div><h2>Não é uma roupa.<br>É um <em>intervalo</em><br>entre o corpo<br>e o tecido.</h2></div>
+        <div class="manifesto__body reveal" style="transition-delay:.12s"><p>CINZA nasce da recusa do excesso, da tendência e da pressa. Cada peça é desenhada, cortada e costurada no mesmo atelier em São Paulo, por seis mãos que assinam o que fazem.</p><p>Não perseguimos a estação. Se o linho de 2025 ficou mais pesado que o de 2024, isso não é erro: é o fio, a chuva, a safra.</p><p class="manifesto__sign">— Helena Vasques, diretora criativa</p></div>
+      </div>
+      <div class="stats reveal" style="transition-delay:.2s">
+        <div class="stat"><div class="stat__num" data-count="32">0<sup>h</sup></div><div class="stat__label">De costura<br>à mão por peça</div></div>
+        <div class="stat"><div class="stat__num" data-count="7">0<sup>×</sup></div><div class="stat__label">Provas de<br>ajuste</div></div>
+        <div class="stat"><div class="stat__num" data-count="2">0<sup>×</sup></div><div class="stat__label">Coleções<br>por ano</div></div>
+        <div class="stat"><div class="stat__num" data-count="180">0<sup>un.</sup></div><div class="stat__label">Peças numeradas<br>por coleção</div></div>
+      </div>
+    </div></section>
+
+    <section class="section pieces" id="pecas"><div class="wrap">
+      <div class="section__head reveal"><h2>Três peças,<br>um <em>mesmo rigor.</em></h2><p>Cada peça recebe um número bordado na etiqueta interna. Quando o drop acaba, o molde é arquivado.</p></div>
+      <div class="piece-grid">
+        <article class="piece-card reveal"><div class="piece-card__idx">01 — Alfaiataria</div><div class="piece-wrap"><div class="piece-glow" aria-hidden="true"></div><div class="garment garment--coat" aria-hidden="true"></div><img class="piece-img piece-img--coat" src="imagens/pecas/jaqueta.png" alt="Jaqueta de lã fria CINZA, costas" loading="lazy" decoding="async"></div><h3><span>Lã fria italiana</span>A Jaqueta</h3><p class="piece-card__notes">Ombro estruturado, cava funda, forro em cupro. A jaqueta que resolve meia estação inteira e envelhece melhor que a maioria das pessoas.</p><div class="piece-card__meta"><span><b>34–44</b></span><span><b>R$ 2.480</b></span></div></article>
+        <article class="piece-card reveal" style="transition-delay:.1s"><div class="piece-card__idx">02 — Vestido</div><div class="piece-wrap"><div class="piece-glow" aria-hidden="true"></div><div class="garment garment--set" aria-hidden="true"></div><img class="piece-img piece-img--set" src="imagens/pecas/vestido.png" alt="Vestido de linho CINZA" loading="lazy" decoding="async"></div><h3><span>Linho belga</span>O Vestido</h3><p class="piece-card__notes">Decote reto, manga curta e caimento solto. Uma peça, um gesto, e o corpo inteiro resolvido. O linho que amassa bonito e respira no calor.</p><div class="piece-card__meta"><span><b>34–44</b></span><span><b>R$ 2.480</b></span></div></article>
+        <article class="piece-card reveal" style="transition-delay:.2s"><div class="piece-card__idx">03 — Acessório</div><div class="piece-wrap"><div class="piece-glow" aria-hidden="true"></div><div class="garment garment--bag" aria-hidden="true"></div><img class="piece-img piece-img--bag" src="imagens/pecas/bolsa.png" alt="Bolsa de couro CINZA" loading="lazy" decoding="async"></div><h3><span>Couro legítimo</span>A Bolsa</h3><p class="piece-card__notes">Estrutura rígida, alça removível, forro em algodão cru. A bolsa que carrega o essencial e nada além.</p><div class="piece-card__meta"><span><b>Único</b></span><span><b>R$ 1.890</b></span></div></article>
+      </div>
+    </div></section>
+
+    <section class="orbit-section" id="materia"><div class="orbit-sticky">
+      <div class="orbit-left"><div class="eyebrow">A matéria</div><h2>O tempo é o único tecido que <em>não se compra.</em></h2><p>Escolhemos as fibras que envelhecem com dignidade, como a pele e a memória. Deslize para revelar a origem de cada fio que cruza o nosso atelier.</p></div>
+      <div class="orbit-right"><div class="orbit-canvas">
+        <article class="orbit-card"><div class="orbit-card__num">01</div><div class="orbit-card__title">Linho Belga</div><div class="orbit-card__desc">Fibra natural que respira. O caimento reto que não pede licença e a textura que só melhora com o uso.</div></article>
+        <article class="orbit-card"><div class="orbit-card__num">02</div><div class="orbit-card__title">Seda Lavada</div><div class="orbit-card__desc">Brilho frio, toque quente. O movimento fluido que precede o corpo e a elegância do que não precisa ser dito.</div></article>
+        <article class="orbit-card"><div class="orbit-card__num">03</div><div class="orbit-card__title">Lã Fria</div><div class="orbit-card__desc">Fio de inverno. Estrutura, peso e memória térmica. A alfaiataria que sustenta a forma sem endurecer o gesto.</div></article>
+        <article class="orbit-card"><div class="orbit-card__num">04</div><div class="orbit-card__title">Couro Legítimo</div><div class="orbit-card__desc">Pele curtida. O tempo desenhando rugas na superfície e transformando um acessório em uma assinatura pessoal.</div></article>
+      </div></div>
+    </div></section>
+
+    <section class="process-section" id="atelier"><div class="process-sticky"><div class="process-inner">
+      <div class="process-left"><div class="eyebrow">O atelier</div><h2>Quatro etapas.<br>Nenhuma <em>delas</em><br>tem pressa.</h2><p>Do primeiro traço à última prova, uma peça CINZA leva de quatro a seis semanas. É o tempo que o tecido pede, não o que o calendário exige.</p></div>
+      <div class="process-right"><div class="process-track">
+        <article class="step"><div class="step__num">01</div><div><h3>Moulage</h3><p>O molde nasce sobre o corpo, com alfinetes e tecido cru. Nada de prancha digital: a forma precisa ceder antes de existir.</p></div></article>
+        <article class="step"><div class="step__num">02</div><div><h3>Corte</h3><p>Tesoura, peso e giz. Cada peça é cortada individualmente, uma a uma, para respeitar o caimento do fio.</p></div></article>
+        <article class="step"><div class="step__num">03</div><div><h3>Costura</h3><p>Trinta e duas horas entre máquina e mão. As casas de botão são feitas à mão e o forro é preso por pontos invisíveis.</p></div></article>
+        <article class="step"><div class="step__num">04</div><div><h3>Acabamento</h3><p>Sete provas, ajustes finos, etiqueta numerada bordada. Só sai do atelier quando cai perfeitamente de costas.</p></div></article>
+      </div></div>
+    </div></div></section>
+
+    <section class="section quotes"><div class="wrap">
+      <div class="section__head reveal"><h2>Quem já <em>vestiu</em></h2><p>Mais de trezentas avaliações verificadas. Nenhuma delas foi comprada com peça emprestada.</p></div>
+      <div class="quote-grid">
+        <article class="quote reveal"><div class="quote__mark" aria-hidden="true">“</div><p>Vesti a jaqueta e entendi o que é caimento. Não aperta, não sobra: só acompanha.</p><div class="quote__author"><div class="avatar"><img src="imagens/perfis/perfil1.png" alt="" loading="lazy" decoding="async"></div><div><div class="quote__name">Mariana Rezende</div><div class="quote__role">Editora de moda · São Paulo</div></div></div></article>
+        <article class="quote reveal" style="transition-delay:.08s"><div class="quote__mark" aria-hidden="true">“</div><p>Comprei o conjunto para uma viagem de dez dias. Usei todos os dias e voltou melhor do que foi.</p><div class="quote__author"><div class="avatar"><img src="imagens/perfis/perfil2.png" alt="" loading="lazy" decoding="async"></div><div><div class="quote__name">Tiago Lacerda</div><div class="quote__role">Consultor · Rio de Janeiro</div></div></div></article>
+        <article class="quote reveal" style="transition-delay:.16s"><div class="quote__mark" aria-hidden="true">“</div><p>É a primeira marca nacional que não me fez querer ajustar nada na costureira.</p><div class="quote__author"><div class="avatar"><img src="imagens/perfis/perfil3.png" alt="" loading="lazy" decoding="async"></div><div><div class="quote__name">Clara Fontes</div><div class="quote__role">Stylist · Belo Horizonte</div></div></div></article>
+      </div>
+    </div></section>
+
+    <section class="section faq" id="perguntas"><div class="wrap"><div class="faq__grid">
+      <div class="faq__aside reveal"><div class="eyebrow">Perguntas</div><h2>Antes de <em>reservar</em></h2><p>Se a sua dúvida não estiver aqui, escreva para <a href="mailto:oi@cinza.studio">oi@cinza.studio</a>. Respondemos em até um dia útil.</p></div>
+      <div class="faq__list reveal" style="transition-delay:.1s">
+        <div class="faq__item"><button class="faq__q" aria-expanded="false"><span>Por que só 180 peças por coleção?</span><span class="faq__icon" aria-hidden="true"></span></button><div class="faq__a"><div><p>Porque é o que o atelier consegue costurar com as mesmas seis mãos, sem terceirizar. Aumentar a produção significaria abrir mão do acabamento à mão, e isso descaracteriza a marca.</p></div></div></div>
+        <div class="faq__item"><button class="faq__q" aria-expanded="false"><span>Como funcionam os tamanhos?</span><span class="faq__icon" aria-hidden="true"></span></button><div class="faq__a"><div><p>Trabalhamos do 34 ao 44, com modelagem própria. Cada peça tem a tabela de medidas completa na página do produto e, se necessário, ajustamos sob medida por um custo adicional.</p></div></div></div>
+        <div class="faq__item"><button class="faq__q" aria-expanded="false"><span>As peças são feitas sob medida?</span><span class="faq__icon" aria-hidden="true"></span></button><div class="faq__a"><div><p>A coleção é padronizada, mas oferecemos ajuste de barra, cintura e manga incluso no preço para peças reservadas na lista de espera.</p></div></div></div>
+        <div class="faq__item"><button class="faq__q" aria-expanded="false"><span>Qual o prazo de entrega?</span><span class="faq__icon" aria-hidden="true"></span></button><div class="faq__a"><div><p>As peças são produzidas após a confirmação da reserva. O prazo é de 25 a 35 dias, com frete incluso para todo o Brasil e rastreamento completo.</p></div></div></div>
+        <div class="faq__item"><button class="faq__q" aria-expanded="false"><span>Como cuidar das peças?</span><span class="faq__icon" aria-hidden="true"></span></button><div class="faq__a"><div><p>Lavagem a seco para alfaiataria e couro; o linho aceita lavagem delicada a frio. Cada peça vem com um cartão de cuidados escrito à mão.</p></div></div></div>
+        <div class="faq__item"><button class="faq__q" aria-expanded="false"><span>A coleção esgota? O que acontece depois?</span><span class="faq__icon" aria-hidden="true"></span></button><div class="faq__a"><div><p>Esgota em média em doze dias. O molde é arquivado e não retorna. Quem está na lista recebe o aviso 48 horas antes da abertura pública.</p></div></div></div>
+      </div>
+    </div></div></section>
+
+    <section class="final-cta" id="reserva"><div class="wrap">
+      <div class="eyebrow" style="justify-content:center;margin-bottom:32px">Drop 07 · 2025 · 180 peças</div>
+      <h2>Reserve a sua<br>antes do <em>próximo</em><br>corte.</h2>
+      <p>Entre na lista. Você recebe o aviso 48 horas antes da abertura pública e escolhe primeiro.</p>
+      <form class="cta-form" id="ctaForm" novalidate><label for="email" class="sr-only">Seu e-mail</label><input id="email" type="email" name="email" placeholder="seu@email.com" autocomplete="email" required><button type="submit">Entrar na lista</button></form>
+      <div class="cta-msg" id="ctaMsg" role="status" aria-live="polite"></div><div class="cta-note">Sem spam · Cancele quando quiser</div>
+    </div></section>
+  </main>
+
+  <footer class="site-footer"><div class="wrap">
+    <div class="footer__grid">
+      <div class="footer__brand"><a href="#top" class="logo" aria-label="CINZA"><span class="logo__mark" aria-hidden="true"></span>Cinza</a><p>Atelier de moda em São Paulo. Peças numeradas, produção própria e estoque nenhum.</p></div>
+      <div class="footer__col"><h4>Produto</h4><ul><li><a href="#pecas">A Jaqueta</a></li><li><a href="#pecas">O Vestido</a></li><li><a href="#pecas">A Bolsa</a></li><li><a href="#materia">A Matéria</a></li><li><a href="#atelier">Atelier</a></li></ul></div>
+      <div class="footer__col"><h4>Casa</h4><ul><li><a href="#manifesto">Manifesto</a></li><li><a href="#perguntas">Perguntas</a></li><li><a href="#reserva">Reservar peça</a></li><li><a href="mailto:oi@cinza.studio">Contato</a></li></ul></div>
+      <div class="footer__col"><h4>Social</h4><ul><li><a href="#" rel="noopener">Instagram</a></li><li><a href="#" rel="noopener">Journal</a></li><li><a href="#" rel="noopener">Pinterest</a></li></ul></div>
+    </div>
+    <div class="footer__bottom"><span>© <span id="year">2026</span> CINZA Studio. Todos os direitos reservados.</span><span><a href="#">Política de privacidade</a> · <a href="#">Termos</a> · <a href="#">Trocas e devoluções</a></span></div>
+  </div></footer>
+
+  <aside class="cookie-notice" id="cookieNotice" role="dialog" aria-labelledby="cookieNoticeLabel" aria-describedby="cookieNoticeBody">
+    <span class="cookie-notice__label" id="cookieNoticeLabel">Cookies</span>
+    <p id="cookieNoticeBody">Usamos apenas cookies essenciais para o funcionamento do site. Nenhum dado é compartilhado com terceiros. <a href="#">Ler política</a>.</p>
+    <div class="cookie-notice__actions">
+      <button type="button" class="cookie-notice__btn cookie-notice__btn--reject" id="cookieReject">Recusar</button>
+      <button type="button" class="cookie-notice__btn cookie-notice__btn--accept" id="cookieAccept">Aceitar</button>
+    </div>
+  </aside>
+
+  <script src="scripts/principal.js"></script>
+</body>
+</html>
